@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.cart', ['ngRoute'])
+angular.module('myApp.cart', ['ngRoute','ui.bootstrap'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/cart', {
