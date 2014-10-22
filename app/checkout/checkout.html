@@ -1,0 +1,22 @@
+<h2>Shopping Cart</h2>
+<div ng:controller="CheckoutCtrl">
+
+	<div ng-if="notPaid">
+	<h1>Shop smart! Shop S-Mart </h1>
+    <table class="table">
+			<tr> <td><span>Name</span></td> <td><input type="text" ng:model="name"class="input-small"></td> </tr>
+			<tr> <td><span>Address (1)</span></td> <td><input type="text" ng:model="address1"class="input-small"></td> </tr>
+			<tr> <td><span>Address (2)</span></td> <td><input type="text" ng:model="address2"class="input-small"></td> </tr>
+			<tr> <td><span>email</span></td> <td><input type="text" ng:model="email" class="input-small"></td> </tr>
+			<tr> <td><span>Credit Card </span></td> <td><input type="text" ng:model="creditcard"class="input-small"></td> </tr>
+       <tr>
+					<td>
+						<a href ng:click="pay()" class="btn btn-small">Pay</a>
+					</td>
+          <td>Total: $99999</td>
+        </tr>
+			</table>
+		</div>
+			<h1 ng-if="paymentRendered">Thanks for your order!</h1>
+</div>
+
